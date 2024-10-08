@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video CRUD Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Video Management</h1>
+  <!-- Form for Adding or Updating Video -->
+  <div>
+    <h2>Add/Update Video</h2>
+    <form id="videoForm">
+      <input type="hidden" id="videoId">
+      <label>Title:</label><br>
+      <input type="text" id="videoTitle"><br>
+      <label>URL:</label><br>
+      <input type="text" id="videoURL"><br><br>
+      <button type="submit">Save Video</button>
+    </form>
+  </div>
+
+  <!-- Table to Show Videos -->
+  <div>
+    <h2>Video List</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>URL</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="videoTableBody">
+      </tbody>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
